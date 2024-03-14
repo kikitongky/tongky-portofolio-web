@@ -1,17 +1,17 @@
-import React from "react"
+import React from "react";
+import Navbar from "./components/Fragments/Navbar";
+import HeroTitle from "./components/Fragments/HeroTitle";
 
 function App() {
-        
-      return (
-        <div>
-          <nav className='w-full flex justify-center fixed top-2'>
-            <ul className='flex gap-5 py-2 px-5 font-semibold rounded-full text-slate-300 bg-slate-800 text-sm '>
-              <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">About</a></li>
-              <li><a href="#" className="hover:text-white">Project</a></li>
-            </ul>
-          </nav>
-        </div>
-      )    
+  return (
+    <div className="min-h-screen bg-gradient-to-r from-gray-800 to-cyan-900 px-4">
+      <div className="flex justify-center">
+        <Navbar className="fixed"></Navbar>
+      </div>
+      <div className="flex justify-center items-center mt-32 px-3">
+        <HeroTitle />
+      </div>
+    </div>
+  );
 }
-export default App
+export default App;
