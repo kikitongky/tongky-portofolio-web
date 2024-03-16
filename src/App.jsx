@@ -8,7 +8,7 @@ function App() {
       <header className="flex justify-center">
         <Navbar className="w-full"></Navbar>
       </header>
-      <main className="flex justify-center items-center mt-32 px-3">
+      <main className="flex justify-center items-center my-32 mx-5 px-3">
         <Homepage />
       </main>
     </div>
