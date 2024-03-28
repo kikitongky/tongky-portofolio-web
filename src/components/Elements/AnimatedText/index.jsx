@@ -15,37 +15,38 @@ const quote = {
 };
 
 const singleWord = {
-  initial: {
-    opacity: 0,
-    y: 50,
-  },
-  animate: {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      delay: 0.5,
+      duration: 0.5,
     },
   },
 };
 
-const AnimatedText = (props) => {
+const AnimatedTextH1 = (props) => {
   const { children, className } = props;
 
   return (
-    <div className="w-full py-2 mx-auto flex items-center justify-center overflow-hidden">
+    <div className="overflow-hidden w-full">
       <motion.h1
-        className={`inline-block text-center text-5xl font-bold text-white ${className}`}
+        className={`inline-block leading-[4.5rem] md:leading-[6.75rem] font-bold text-white items-center ${className}`}
         variants={quote}
-        initial="initial"
-        animate="animate"
       >
-        {children.split(" ").map((word, index) => (
+        {children.split(" ").map((char, index) => (
           <motion.span
-            key={word + "-" + index}
             className="inline-block"
+            key={char + "-" + index}
             variants={singleWord}
+            initial="hidden"
+            animate="visible"
+            transition={{
+              delay: index * 0.1,
+            }}
           >
-            {word}&nbsp;
+            {char}&nbsp;
           </motion.span>
         ))}
       </motion.h1>
@@ -53,4 +54,4 @@ const AnimatedText = (props) => {
   );
 };
 
-export default AnimatedText;
+export default AnimatedTextH1;

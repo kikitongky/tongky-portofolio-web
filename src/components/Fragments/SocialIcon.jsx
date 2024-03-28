@@ -5,7 +5,7 @@ const SocialIcon = (props) => {
       <a
         href="#"
         target="_blank"
-        className="p-[2px] bg-gradient-to-b from-gray-800 to-cyan-900 border border-slate-300 rounded-full hover:-translate-y-2 transition-transform"
+        className="p-[2px] bg-gradient-to-r from-gray-900 to-gray-950 border border-slate-300 rounded-full hover:-translate-y-2 transition-transform"
       >
         {children}
       </a>

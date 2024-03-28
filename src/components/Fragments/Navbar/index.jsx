@@ -7,8 +7,8 @@ function Navbar() {
       <Logo />
       <nav className="flex justify-center gap-12">
         <Navlist href="/">Home</Navlist>
-        <Navlist href="/">About</Navlist>
-        <Navlist href="/">Project</Navlist>
+        <Navlist href="/about">About</Navlist>
+        <Navlist href="/project">Project</Navlist>
       </nav>
     </header>
   );
