@@ -32,7 +32,7 @@ const AnimatedTextH1 = (props) => {
   return (
     <div className="overflow-hidden w-full">
       <motion.h1
-        className={`inline-block leading-[4.5rem] md:leading-[6.75rem] font-bold text-white items-center ${className}`}
+        className={`inline-block font-bold text-white items-center ${className}`}
         variants={quote}
       >
         {children.split(" ").map((char, index) => (

@@ -5,7 +5,7 @@ const Logo = () => {
         href="/"
         className=" transition-all text-center flex items-center justify-center text-xl text-white font-semibold"
       >
-        t
+        tongky
       </a>
     </div>
   );
