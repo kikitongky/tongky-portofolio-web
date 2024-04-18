@@ -5,7 +5,7 @@ const HomeTitle = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <div className="flex-1 self-center sm:self-start">
-        <AnimatedTextH1 className="text-7xl sm:text-8xl text-wrap sm:text-right leading-[5rem] md:leading-[6.75rem] flex-wrap">
+        <AnimatedTextH1 className="text-7xl sm:text-8xl text-wrap sm:text-right leading-[5rem] sm:leading-[6.75rem] flex-wrap">
           I am Tongky
         </AnimatedTextH1>
       </div>
